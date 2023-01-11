@@ -578,7 +578,7 @@ function automata.grow(pattern_id, pname)
 	automata.patterns[pattern_id] = values
 	if is_final == 1 then
 		automata.patterns[pattern_id].status = "finished"
-		minetest.chat_send_player(pname, "Your pattern, #"..pattern_id.." hit it's generation limit, "..iteration)
+		minetest.chat_send_player(pname, "Your pattern, #"..pattern_id.." hit its generation limit, "..iteration)
 		return false
 	end
 	if next(new_indexes) == nil then
